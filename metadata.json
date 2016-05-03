@@ -1,0 +1,9 @@
+{
+    "uuid": "lamp-panel@baivong.github.io",
+    "name": "LAMP Panel Menu",
+    "description": "A Panel Menu for LAMP Web Developers",
+    "icon": "xampp",
+    "version": "1.0.0",
+    "author": "Zzbaivong",
+    "license": "MIT"
+}

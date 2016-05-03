@@ -1,0 +1,61 @@
+{
+    "icon-setting": {
+        "type": "header",
+        "description": "Icons"
+    },
+    "custom-icon" : {
+        "type" : "checkbox",
+        "default" : false,
+        "description": "Check this to use a custom icon:",
+        "tooltip": "Checking this box allows you to set a custom icon in the field below - this demonstrates setting dependencies"
+     },
+    "icon-name": {
+        "type": "iconfilechooser",
+        "default": "xampp",
+        "description": "The icon to use in the panel:",
+        "tooltip": "Select an icon file, or you can type an icon name into the entry box",
+        "indent": true,
+        "dependency" : "custom-icon"
+    },
+    "icon-label": {
+        "type": "entry",
+        "default": "LAMP Panel Menu",
+        "description": "Custom Applet Label:",
+        "tooltip": "Set your custom label here. This field is unavailable unless the checkbox above is enabled",
+        "indent": true,
+        "dependency" : "custom-icon"
+    },
+    "separator": {
+        "type": "separator"
+    },
+    "path-setting": {
+        "type": "header",
+        "description": "Document root"
+    },
+    "www-dir": {
+        "type": "filechooser",
+        "description": "Choose localhost location:",
+        "default": "/var/www/html",
+        "select-dir": true
+    },
+    "php-setting": {
+        "type": "header",
+        "description": "PHP config"
+    },
+    "php-ini-dir": {
+        "type": "filechooser",
+        "description": "Choose php.ini location:",
+        "default": "/etc/php5/apache2/php.ini",
+        "select-dir": false
+    },
+    "apache-setting": {
+        "type": "header",
+        "description": "Apache config"
+    },
+    "apache-conf-dir": {
+        "type": "filechooser",
+        "description": "Choose Apache config location:",
+        "default": "/etc/apache2/apache2.conf",
+        "select-dir": false
+    }
+}
